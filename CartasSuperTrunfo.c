@@ -13,7 +13,7 @@ int main() {
     int populacao;
     int area;
     int pturisticos;
-    
+    int pib;
     
     // Cadastro das Cartas:
     
@@ -35,12 +35,17 @@ int main() {
     printf("Digite a quantidade de pontos turisticos: \n");
     scanf("%d", &pturisticos);
 
+    printf("Digite o PIB da cidade: \n");
+    scanf("%d", &pib);
+
     // Exibição dos Dados das Cartas:
-    printf("Código: %c%d\n", letra, numero);
+    printf("\nCódigo: %c%d\n", letra, numero);
     printf("Cidade: %s\n", nome);
     printf("População: %d\n", populacao);
     printf("Área da cidade: %d m²\n", area);
     printf("Quantidade de pontos turisticos: %d\n", pturisticos);
-
+    printf("Densidade populacional: %d\n", populacao / area);
+    printf("Produto interno bruto: %d\n", pib);
+    printf("PIB per capita: %d\n", pib / populacao);
     return 0;
 }
