@@ -49,7 +49,7 @@ int main() {
     scanf("%d", &pib);
 
     printf("Digite a letra da carta 2: \n");
-    scanf("%c", &letra2);
+    scanf("%s", &letra2);
 
     printf("Digite o número da carta 2: \n");
     scanf("%d", &numero2);
@@ -88,13 +88,32 @@ int main() {
     printf("PIB per capita: %d\n", pib2 / populacao2);
 
     //Comparação para ganhador
+    if(populacao > populacao2){
+        printf("\n%s tem a maior população!\n", nome);
+    }else{
+        printf("%s tem a maior população!\n", nome2);
+    }
+    if (area > area2){
+        printf("%s tem a maior área!\n", nome);
+    }else{
+        printf("%s tem a maior área!\n", nome2);
+    }
+    if(pturisticos >pturisticos2){
+        printf("%s tem a mais pontos turisticos!\n", nome);
+    }else{
+        printf("%s tem a mais pontos turisticos!\n", nome2);
+    }
+    if(pib > pib2){
+        printf("%s tem a maior PIB!\n", nome);
+    }else{
+        printf("%s tem a maior PIB!\n", nome2);
+    }
     if (superpoder > superpoder2)
     {
-        printf("\n%s ganhou!\n", nome);
-    }
-    if (superpoder2 > superpoder);
+        printf("\n%s tem a maior média de pontos!\n", nome);
+    }else;
     {
-        printf("\n%s ganhou!\n", nome2);
+        printf("\n%s tem a maior média de pontos!\n", nome2);
     }
     
     return 0;
